@@ -28,7 +28,7 @@ Presentation from MMP (Micro Music Player)
 
   + **Volume** control setting.
 
-**MMP** is an easy music folder or file playing concept music player so that you only have to select a folder which contains some **MMP** compatible music files (filetypes: ``*.mp3``, ``*.ogg``, ``*.flac`` and ``*.wav``) to play it content, or a single file.
+**MMP** is an easy music folder or file playing concept music player so that you only have to select a folder which contains some **MMP** compatible music files (most common suppported filetypes: ``*.mp3``, ``*.ogg``, ``*.flac``, ``*.wma`` and ``*.wav``) to play it content, or a single file.
 
 After listing the folder content and searching for an cover image to display ; **MMP** will give you full access to the folder music content and display the album cover image if found one in the choosen folder.
 
