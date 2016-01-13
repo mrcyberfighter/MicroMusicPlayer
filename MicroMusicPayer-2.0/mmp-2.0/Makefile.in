@@ -77,8 +77,11 @@ PRGNAME  = MicroMusicPlayer
 
 OBJFILES = $(foreach var, $(CXXFILES:.cpp=.o), $(BUILD_DIR)/$(var))
 
-$(PRGNAME): $(OBJFILES)
+$(PRGNAME): $(BUILD_DIR) $(OBJFILES)
 	$(CXX) $(MMP_CXXFLAGS) $(GTK_CFLAGS) $(VLC_CFLAGS) $(OBJFILES) -o $(PRGNAME) $(LDFLAGS)
+
+$(BUILD_DIR):
+	$(MKDIR_P) $(BUILD_DIR)
 
 $(BUILD_DIR)/Resizer.o: Resizer.cpp Resizer.h
 	$(CXX) $(MMP_CXXFLAGS) $(GTK_CFLAGS) $(VLC_CFLAGS) -c $< -o $@ $(LDFLAGS)
