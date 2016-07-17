@@ -1,0 +1,403 @@
+.\" Man page generated from reStructuredText.
+.
+.TH   "mmp" "1" ""
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.SH NAME
+.sp
+\fBmmp\fP \- A simple play a music folder or files player.
+.SH SYNOPSYS
+.sp
+\fBmmp\fP [[dir|file(s)]path]
+.SH DECRIPTION
+.sp
+\fBmmp\fP is a little, minimal features, music player program with following simple functionalities:
+.INDENT 0.0
+.INDENT 3.5
+.INDENT 0.0
+.IP \(bu 2
+\fBPlay\fP, \fBStop\fP, \fBPause\fP, \fBResume\fP music playing.
+.IP \(bu 2
+Playing \fBNext\fP, \fBPrevious\fP, song control options.
+.IP \(bu 2
+\fBShuffle\fP and \fBRepeat All\fP features (playlist modes).
+.IP \(bu 2
+\fBTimeline\fP view, control and current elapsed time displaying.
+.IP \(bu 2
+\fBVolume\fP control setting.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBmmp\fP is an easy music folder or files playing concept music player so that you only have to select a folder which contains some \fBmmp\fP compatible music file(s) to play it content, or comptable music files.
+.sp
+After listing the folder content or file(s) and searching for an cover image to display ; \fBmmp\fP will give you full access to the music folder content or file(s) and display the album cover image if found.
+.sp
+A cover image in form of a compatible image file (filetypes: \fB*.jpg\fP, \fB*.jpe\fP, \fB*.jpeg\fP, \fB*.png\fP, \fB*.bmp\fP, \fB*.dib\fP, or \fB*.tif\fP, \fB*.tiff\fP) resized to \fBmmp\fP 3 differents, free choosable, fixed interface sizes (\fBlittle\fP, \fBmiddle\fP, \fBbig\fP sizes).
+.sp
+Then \fBmmp\fP play the folder content or the  selected music files in lexicographic sorted order (so as your O.S present you the files) or in shuffle mode.
+.SS Additionnal features
+.INDENT 0.0
+.IP \(bu 2
+\fBPlay\fP files, to play the selected file instead of an entire folder.
+.IP \(bu 2
+\fBDisplay playlist\fP:
+.sp
+Display a window displaying the folder content or the file playlist.
+.sp
+The current playing music file is marked with an icon in the marging.
+.sp
+You can double\-click on a file to play it.
+.IP \(bu 2
+\fBTimeline bar\fP view and control.
+.UNINDENT
+.SH CONFIGURATION
+.INDENT 0.0
+.IP \(bu 2
+\fBConfigure program\fP: at your convenience.
+.INDENT 2.0
+.IP 1. 3
+Here you can choose the icons set to use in the interface: 2 different sets available.
+.UNINDENT
+.INDENT 2.0
+.INDENT 3.5
+.INDENT 0.0
+.IP \(bu 2
+The \fBHighContrast\fP icon set \fItheme\fP: black and white icons.
+.IP \(bu 2
+The \fBOxygen\fP icon set \fItheme\fP: colored icons.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 2.0
+.IP 2. 3
+You can choose the main size from the interface from 3 available sizes:
+.UNINDENT
+.INDENT 2.0
+.INDENT 3.5
+.INDENT 0.0
+.IP \(bu 2
+\fBLittle\fP size.
+.IP \(bu 2
+\fBMiddle\fP size.
+.IP \(bu 2
+\fBBig\fP size.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 2.0
+.IP 3. 3
+You can set the \fBdefault music folder\fP used when you open a folder, you immediately in \fB!\fP\&.
+.IP 4. 3
+You can \fIclick\-on\fP, \fIclick\-off\fP the \fBrepeat all\fP and \fBshuffle\fP mode to be set as you want.
+.IP 5. 3
+Else you can change the \fBdefault volume intensity\fP (\fIfrom 0 to 100 units\fP, which default to \fI50\fP\&.) to be set as the default volume intensity from the program.
+.UNINDENT
+.INDENT 2.0
+.INDENT 3.5
+Changes are immediately applied on the program, except the \fBdefault volume intensity\fP,
+.sp
+You must press the \fBApply\fP button to store the settings, so that you can get it back at every new start from the program.
+.sp
+You can open a folder or files with \fBmmp\fP through your file navigator or start it with the commandline:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ mmp [folder|file(s)]path # mmp is a symbolic link.
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.IP \(bu 2
+\fBTimeline progressbar\fP: displaying the progress of the music file reading, which you can drag the slider from to change the current position of the music file.
+.IP \(bu 2
+\fBElapsed time\fP of the current music file reading displaying.
+.UNINDENT
+.SH FILES
+.SS Music files filetypes:
+.sp
+The most common music filetypes:
+.INDENT 0.0
+.IP \(bu 2
+\fBmp3\fP (\fIMPEG\-1 Audio Layer III or MPEG\-2 Audio Layer III\fP).
+.IP \(bu 2
+\fBogg\fP (\fIOgg Vorbis\fP).
+.IP \(bu 2
+\fBflac\fP (\fIFree Lossless Audio Codec\fP).
+.IP \(bu 2
+\fBwav\fP (\fIWAVEform audio file format\fP).
+.IP \(bu 2
+\fBwma\fP (\fIWindows Media Audio\fP).
+.IP \(bu 2
+\fBaac\fP (\fIAdvanced Audio Coding\fP).
+.IP \(bu 2
+\fBac3\fP (\fIDolby Digital\fP).
+.IP \(bu 2
+\fBmid\fP or \fBmidi\fP (\fIMusical Instrument Digital Interface\fP).
+.IP \(bu 2
+\fBape\fP (\fIMonkey’s Audio\fP).
+.IP \(bu 2
+\fBmov\fP (\fIQuickTime\fP).
+.UNINDENT
+.sp
+Else the complete supported filetypes list:
+.INDENT 0.0
+.IP \(bu 2
+\fI*.3ga\fP
+.IP \(bu 2
+\fI*.669\fP
+.IP \(bu 2
+\fI*.a52\fP
+.IP \(bu 2
+\fI*.aac\fP
+.IP \(bu 2
+\fI*.ac3\fP
+.IP \(bu 2
+\fI*.adt\fP
+.IP \(bu 2
+\fI*.adts\fP
+.IP \(bu 2
+\fI*.aif\fP
+.IP \(bu 2
+\fI*.aifc\fP
+.IP \(bu 2
+\fI*.aiff\fP
+.IP \(bu 2
+\fI*.amb\fP
+.IP \(bu 2
+\fI*.amr\fP
+.IP \(bu 2
+\fI*.aob\fP
+.IP \(bu 2
+\fI*.ape\fP
+.IP \(bu 2
+\fI*.au\fP
+.IP \(bu 2
+\fI*.awb\fP
+.IP \(bu 2
+\fI*.caf\fP
+.IP \(bu 2
+\fI*.dts\fP
+.IP \(bu 2
+\fI*.flac\fP
+.IP \(bu 2
+\fI*.it\fP
+.IP \(bu 2
+\fI*.kar\fP
+.IP \(bu 2
+\fI*.m4a\fP
+.IP \(bu 2
+\fI*.m4b\fP
+.IP \(bu 2
+\fI*.m4p\fP
+.IP \(bu 2
+\fI*.m5p\fP
+.IP \(bu 2
+\fI*.mid\fP
+.IP \(bu 2
+\fI*.mka\fP
+.IP \(bu 2
+\fI*.mlp\fP
+.IP \(bu 2
+\fI*.mod\fP
+.IP \(bu 2
+\fI*.mpa\fP
+.IP \(bu 2
+\fI*.mp1\fP
+.IP \(bu 2
+\fI*.mp2\fP
+.IP \(bu 2
+\fI*.mp3\fP
+.IP \(bu 2
+\fI*.mpc\fP
+.IP \(bu 2
+\fI*.mpga\fP
+.IP \(bu 2
+\fI*.mus\fP
+.IP \(bu 2
+\fI*.oga\fP
+.IP \(bu 2
+\fI*.ogg\fP
+.IP \(bu 2
+\fI*.oma\fP
+.IP \(bu 2
+\fI*.opus\fP
+.IP \(bu 2
+\fI*.qcp\fP
+.IP \(bu 2
+\fI*.ra\fP
+.IP \(bu 2
+\fI*.rmi\fP
+.IP \(bu 2
+\fI*.s3m\fP
+.IP \(bu 2
+\fI*.sid\fP
+.IP \(bu 2
+\fI*.spx\fP
+.IP \(bu 2
+\fI*.tak\fP
+.IP \(bu 2
+\fI*.thd\fP
+.IP \(bu 2
+\fI*.tta\fP
+.IP \(bu 2
+\fI*.voc\fP
+.IP \(bu 2
+\fI*.vqf\fP
+.IP \(bu 2
+\fI*.w64\fP
+.IP \(bu 2
+\fI*.wav\fP
+.IP \(bu 2
+\fI*.wma\fP
+.IP \(bu 2
+\fI*.wv\fP
+.IP \(bu 2
+\fI*.xa\fP
+.IP \(bu 2
+\fI*.xm\fP
+.UNINDENT
+.SS Cover image filetypes:
+.INDENT 0.0
+.IP \(bu 2
+\fBjpeg\fP, \fBjpg\fP, \fBjpe\fP (\fIJoint Photographic Experts Group\fP).
+.IP \(bu 2
+\fBpng\fP (\fIPortable Network Graphics\fP).
+.IP \(bu 2
+\fBbmp\fP, \fBdib\fP (\fIbitmap image file or device independent bitmap\fP).
+.IP \(bu 2
+\fBtiff\fP, \fBtif\fP (\fITagged Image File Format\fP).
+.UNINDENT
+.SH VERSIONS
+.SS mmp version 2.0
+.sp
+has totally change the audio engine and the images management:
+.sp
+Instead of using the \fBSDL2_mixer\fP library it use the \fBlibvlc\fP library (with which the famous media player \fBvlc\fP is build).
+.sp
+The \fBopencv\-3.0.0\fP library is no more needed. \fBmmp\fP uses \fBgtk+\-3.0\fP for the cover images resizing.
+.sp
+Nothing change for the user except that the program will never more crashing due of my missuse of the \fBSDL2_mixer\fP library.
+.SS mmp Version 2.1
+.sp
+Introduce some few new usefull concept.
+.sp
+\fBmmp\fP use some few metadatas from the files with fallback if not found for:
+.INDENT 0.0
+.INDENT 3.5
+.INDENT 0.0
+.IP 1. 3
+Formatting the displaying to the user of the current playing music file, in following manner:
+.UNINDENT
+.INDENT 0.0
+.INDENT 3.5
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+N° of track Artist \- Title Duration
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.IP 2. 3
+Getting the duration of the music file what permit:
+.UNINDENT
+.INDENT 0.0
+.INDENT 3.5
+.INDENT 0.0
+.IP \(bu 2
+To display the duration of the music file to the user.
+.IP \(bu 2
+Provide a timeline bar which you can drag the slider to change the current position in the track.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.IP 3. 3
+Displaying a timeline bar.
+.IP 4. 3
+Getting the correct cover image.
+.UNINDENT
+.INDENT 0.0
+.INDENT 3.5
+Because in version below 2.1 it could append that \fBmmp\fP display the back face of the a cover image or any other image.
+.INDENT 0.0
+.TP
+.B note
+It can still append but very much least as before: per example if \fBmmp\fP cannot access the metadata, but not necessarily in this case (because of fallback success).
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SH AUTHOR
+.sp
+\fB:developer:\fP Written by Eddie Brüggemann <\fI\%mrcyberfighter@gmail.com\fP>
+.sp
+\fB:Website:\fP <\fI\%http://www.open\-source\-projects.net/mmp/mmp\fP>
+.SH REPORTING BUGS
+.sp
+\fB:mail:\fP <\fI\%mrcyberfighter@gmail.com\fP>
+.SH COPYRIGHT
+.sp
+Copyright (C) 2015, 2016 Brüggemann Eddie.
+.sp
+License GPLv3: GNU GPL version 3 or later.
+.sp
+<\fI\%http://gnu.org/licenses/gpl.html\fP>.
+.sp
+This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.
+.SH CREDITS
+.sp
+Thanks to my beloved \fBmother\fP, my \fBfamily\fP and to the \fBdoctors\fP\&.
+.sp
+\fBStay away\fP from \fBdrugs\fP: \fBdrugs destroy your brain and your life\fP\&.
+.sp
+Thanks to my \fBuncle\fP too, who let free usage of his \fBMac O.S\fP, for the development of \fBmmp\fP version \fB1.0\fP,
+.sp
+during my holydays where i write this lines from...
+.INDENT 0.0
+.INDENT 3.5
+By the way \fBMac O.S\fP seems to me a little bit strange the first times but i think it’s good stuff finally.
+.sp
+I think that \fBMac\fP compile right with his \fBC++ compiler\fP but not verbose enough about errors. The \fBMac\fP \fBterminal\fP is near enough from the \fBLinux\fP \fBterminal\fP, so that i could work...
+.sp
+The strange is that there is \fBno\fP Mac version of \fBmmp\fP available due of the lack of time and the fact that i get no \fBMac\fP packaging knowledge.
+.UNINDENT
+.UNINDENT
+.\" Generated by docutils manpage writer.
+.

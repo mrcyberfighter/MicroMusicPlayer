@@ -1,3 +1,4 @@
+
 mmp (Micro Music Player)
 ------------------------
 
@@ -9,11 +10,9 @@ mmp (Micro Music Player)
 
 :Language: C++
 
-:Release Time: Thu Jul 14 23:59:09 CEST 2016
+:Release Time: |today|
 
 :License: GPLv3
-
-.. image:: ./Micro_Music_Player.png
 
 Presentation from mmp (Micro Music Player)
 ------------------------------------------
@@ -25,9 +24,9 @@ Presentation from mmp (Micro Music Player)
   + Playing **Next**, **Previous**, song control options.
 
   + **Shuffle** and **Repeat All** features (playlist modes).
-
+ 
   + **Timeline** view, control and current elapsed time displaying.
-
+ 
   + **Volume** control setting.
 
 **mmp** is an easy music folder or files playing concept music player so that you only have to select a folder which contains some **mmp** compatible music file(s) to play it content, or comptable music files.
@@ -74,7 +73,7 @@ Additionnal features
   5. Else you can change the **default volume intensity** (*from 0 to 100 units*, which default to *50*.) to be set as the default volume intensity from the program.
 
     Changes are immediately applied on the program, except the **default volume intensity**,
-
+ 
     You must press the **Apply** button to store the settings, so that you can get it back at every new start from the program.
 
     You can open a folder or files with **mmp** through your file navigator or start it with the commandline:
@@ -96,139 +95,139 @@ Music files filetypes:
   The most common music filetypes:
 
     * **mp3** (*MPEG-1 Audio Layer III or MPEG-2 Audio Layer III*).
- 
+  
     * **ogg** (*Ogg Vorbis*).
- 
+  
     * **flac** (*Free Lossless Audio Codec*).
- 
+  
     * **wav** (*WAVEform audio file format*).
- 
+  
     * **wma** (*Windows Media Audio*).
- 
+  
     * **aac** (*Advanced Audio Coding*).
- 
+  
     * **ac3** (*Dolby Digital*).
- 
+  
     * **mid** or **midi** (*Musical Instrument Digital Interface*).
- 
+  
     * **ape** (*Monkey’s Audio*).
- 
+  
     * **mov** (*QuickTime*).
 
   Else the complete supported filetypes list:
 
     * *\*.3ga*
- 
+  
     * *\*.669*
- 
+  
     * *\*.a52*
- 
+  
     * *\*.aac*
- 
+  
     * *\*.ac3*
- 
+  
     * *\*.adt*
- 
+  
     * *\*.adts*
- 
+  
     * *\*.aif*
- 
+  
     * *\*.aifc*
- 
+  
     * *\*.aiff*
- 
+  
     * *\*.amb*
- 
+  
     * *\*.amr*
- 
+  
     * *\*.aob*
- 
+  
     * *\*.ape*
- 
+  
     * *\*.au*
- 
+  
     * *\*.awb*
- 
+  
     * *\*.caf*
- 
+  
     * *\*.dts*
- 
+  
     * *\*.flac*
- 
+  
     * *\*.it*
- 
+  
     * *\*.kar*
- 
+  
     * *\*.m4a*
- 
+  
     * *\*.m4b*
- 
+  
     * *\*.m4p*
- 
+  
     * *\*.m5p*
- 
+  
     * *\*.mid*
- 
+  
     * *\*.mka*
- 
+  
     * *\*.mlp*
- 
+  
     * *\*.mod*
- 
+  
     * *\*.mpa*
- 
+  
     * *\*.mp1*
- 
+  
     * *\*.mp2*
- 
+  
     * *\*.mp3*
- 
+  
     * *\*.mpc*
- 
+  
     * *\*.mpga*
- 
+  
     * *\*.mus*
- 
+  
     * *\*.oga*
- 
+  
     * *\*.ogg*
- 
+  
     * *\*.oma*
- 
+  
     * *\*.opus*
- 
+  
     * *\*.qcp*
- 
+  
     * *\*.ra*
- 
+  
     * *\*.rmi*
- 
+  
     * *\*.s3m*
- 
+  
     * *\*.sid*
- 
+  
     * *\*.spx*
- 
+  
     * *\*.tak*
- 
+  
     * *\*.thd*
- 
+  
     * *\*.tta*
- 
+  
     * *\*.voc*
- 
+  
     * *\*.vqf*
- 
+  
     * *\*.w64*
- 
+  
     * *\*.wav*
- 
+  
     * *\*.wma*
- 
+  
     * *\*.wv*
- 
+  
     * *\*.xa*
- 
+  
     * *\*.xm*
 
 Cover image filetypes:
@@ -283,25 +282,25 @@ Introduce some few new usefull concept.
 **mmp** use some few metadatas from the files with fallback if not found for:
 
   1. Formatting the displaying to the user of the current playing music file, in following manner:
-  
+   
     ::
-  
+   
       N° of track Artist - Title Duration
-    
+     
   2. Getting the duration of the music file what permit:
-
+ 
     + To display the duration of the music file to the user.
-  
+   
     + Provide a timeline bar which you can drag the slider to change the current position in the track.
-
+ 
   3. Displaying a timeline bar.
-
+ 
   4. Getting the correct cover image.
-
+ 
     Because in version below 2.1 it could append that **mmp** display the back face of the a cover image or any other image.
-  
-    :note: It can still append but very much least as before: per example if **mmp** cannot access the metadata, but not necessarily in this case (because of fallback success).   
-        
+   
+    :note: It can still append but very much least as before: per example if **mmp** cannot access the metadata, but not necessarily in this case (because of fallback success).    
+         
 
 Credits
 -------
@@ -343,4 +342,4 @@ License
 
       You should have received a copy of the GNU General Public License
       along with this program.  If not, see <http://www.gnu.org/licenses/>.
-    
+     
