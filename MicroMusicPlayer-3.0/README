@@ -1,0 +1,86 @@
+mmp (Micro Music Player)
+************************
+
+Developer: Eddie Brüggemann
+
+Contact: mrcyberfighter@gmail.com
+
+version: 3.0
+
+Language: C++
+
+Release Time: Mon, 19 Dec 2016 18:45:23 +0100
+
+License: GPLv3
+
+Dependencies:
+*************
+
+* gtk+-3.0 (Tested with >= 3.20)
+
+* liblvc.
+
+  :note: You can get prebuilt of libvlc at https://nightlies.videolan.org/build/
+
+Build system
+*************
+
+Test on:
+
+* GNU/Linux (Works properly).
+
+* MSYS2 with x86_64-w64-mingw32-g++ as CXX
+
+  $ ./configure CXX= x86_64-w64-mingw32-g++ (Works properly).
+
+  * liblvc build obtain at: https://nightlies.videolan.org/build/
+
+  * Else pacman provide a git build of libvlc but currently
+  * you won't be able to redistribute it due of a bug from the library build.
+
+* MACOSX (Version Sierra) (Works properly).
+
+  * libvlc self-build search at http://wwww.open-source-projects/index/ to get it.
+
+Tested but not works on:
+
+* cygwin
+
+  with as CXX:
+  
+    * g++ (Compilation and install success but BUG by choosing music folder or file(s) to play.
+  
+    * x86_64-w64-mingw32-g++ (Doesn't Compile due of gtk+-3.18 implementation.
+
+Installation
+************
+
+  Simply type:
+
+    $ ./configure
+    $ make
+    $ sudo make install
+
+:note: Sea the file INSTALL for further informations.
+
+:warning: On Mac Os X it seems that a bug must be corrected by typing: ``chmod a+x install-sh``.
+
+License
+*******
+
+      Micro Music Player a very simple play a folder or a file music player.
+      Copyright (C) 2015, 2016  Brüggemann Eddie.
+
+      This program is free software: you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation, either version 3 of the License, or
+      (at your option) any later version.
+
+      This program is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      GNU General Public License for more details.
+
+      You should have received a copy of the GNU General Public License
+      along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    
