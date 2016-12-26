@@ -386,24 +386,6 @@ so that you can use it like this or modify it, in the way you want, according to
 
     + ``Ctrl + A`` -> *Display* the **About window**.
 
-
-Notes
------
-
-  This program, ``mmp`` version **3.0**, was written on an ``Ubuntu 16.10`` distribution.
-
-  Then adapt to:
-
-  * **Windows 7 (64 bits)**, and compiled with a native ``x86_64-w64-mingw32-g++`` compiler.
-
-  * **MacOS Sierra**, and compiled with the g++ compiler.
-
-  So some functionalities are not available on some portages, very sorry !
-
-  :Windows: This program was tested on a **Windows 7 64 bits** system and should work on **Windows** versions **>= 7**.
-
-  :MacOS: This program was tested on a **Mac OS** *Sierra*, I don't know about retro-compatiblity and future O.S release compatiblity.
-
 mmp supported filetypes:
 ------------------------
 
