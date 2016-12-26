@@ -1,1 +1,0 @@
-dist_man_MANS = mmp.1 MicroMusicPlayer.1
